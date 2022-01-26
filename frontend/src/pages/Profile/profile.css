@@ -1,0 +1,119 @@
+.pr-fr{
+    min-height: 78vh;
+    gap: 14px;
+    padding: 1% 1% 4% 1% ;
+}
+
+.pr-pic{
+    gap: 20px;
+}
+.pr-pic-cont{
+    width: 180px;
+    height: 180px;
+    background: var(--spray);
+    border-radius: 50%;
+}
+.pr-pic-cont img{
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.pr-cap{
+    letter-spacing: 4px;
+    color: var(--text);
+    padding: 1%;
+}
+
+.pr-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    width: 220px;
+    height: 30px;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+  
+}
+.pr-btn:hover{
+    text-shadow: 
+    1px 1px 1px black;
+}
+.pr-btn i{
+    padding-top: 1px;
+}
+
+.pr-set-btn{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border-radius: 6px;
+}
+
+.pr-edit{
+    color: lightgreen;
+    background: none;
+    border: 1px solid lightgreen
+}
+.pr-edit:hover{
+    background: lightyellow;
+}
+.pr-edit:active{
+    background: lightyellow;
+    opacity: .7;
+}
+.pr-remove{
+    color: orangered;
+    background: none;
+    border: 1px solid orangered
+}
+.pr-remove:hover{
+    background: lightyellow;
+}
+.pr-save{
+    color: var(--cream);
+    background: var(--spray);
+    font-size: 14px;
+}
+.pr-save:hover{
+    background: var(--cream);
+    border: 1px solid var(--spray);
+    color: var(--spray);
+}
+
+.pr-pic-btns{
+    gap: 14px;
+}
+
+.pr-email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--text);
+    width: 240px;
+    border-radius: 0px !important;
+    background: none !important;
+}
+
+.pr-email-val, .pr-pass-val{
+    position: absolute;
+    left: 6px;
+    font-size: 11px;
+    color: tomato;
+    font-style: oblique;
+}
+
+.pr-email-val{
+    top:-12px;
+}
+.pr-pass-val{
+    top:-16px;
+}

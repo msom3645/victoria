@@ -1,0 +1,25 @@
+.contacts-fr{
+    min-height: 78vh;
+}
+
+.contacts-data{
+    height: 240px;
+    width: 340px;
+    align-items: flex-start !important;
+}
+.contacts-data div{
+    text-align: left;
+
+}
+
+.contacts-card{
+    gap: 16px;
+    padding: 12px 4px;
+    box-shadow: 0 0 4px var(--spray);
+    margin: 0px 6px 20px 6px;
+    border-radius: 6px;
+}
+.contacts-card span{
+    color: var(--text);
+    font-weight: 700;
+ }
