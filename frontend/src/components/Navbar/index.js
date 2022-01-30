@@ -13,7 +13,7 @@ const Navbar = () => {
             <span onClick={()=>setSts(false)} className='nav-logo'><Logo/></span>
             <div className='nav-links f'>
             
-            <NavLink to="/about" className={(navData) => (navData.isActive ? "nav-link x-active" : 'nav-link')}>ABOUT</NavLink>
+            <NavLink to="/about" className={(navData) => (navData.isActive ? "nav-link x-active" : 'nav-link')}>ABOUTs</NavLink>
             <NavLink to="/services" className={(navData) => (navData.isActive ? "nav-link x-active" : 'nav-link')}>SERVICES</NavLink>
             <NavLink to="/stylists" className={(navData) => (navData.isActive ? "nav-link x-active" : 'nav-link')}>SPECIALISTS</NavLink>
             <NavLink to="/booknow" className={(navData) => (navData.isActive ? "nav-link x-active" : 'nav-link')}>BOOK NOW</NavLink>
