@@ -1,0 +1,63 @@
+.about-fr{
+    margin: 0px 10px;
+}
+
+.about-cols{
+    max-width: 1200px;
+    width: 100%;
+    gap: 18px;
+    color: var(--black);
+}
+
+.about-cit1, .about-cit2, .about-text, .about-img{
+    text-align: justify;
+}
+.about-cit1{
+    max-width: 400px;
+    width: 100%;
+    color: rgb(115, 147, 179);
+}
+.about-cit2{
+    max-width: 600px;
+    width: 100%;
+    color: var(--text);
+}
+.about-text{
+    max-width: 918px;
+    width: 100%;
+    text-indent: 2rem;
+}
+
+.about-q{
+    color: var(--text);
+    margin-bottom: auto;
+    font-weight: 700;
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+.about-text::first-letter{
+    background: var(--spray);
+    font-size: 200%;
+    padding: 0 10px;
+    color: var(--cream);
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.about-text::first-line{
+    font-weight: 600;
+}
+
+.about-img{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-welc{
+    max-width: 500px;
+    width: 100%;
+    margin: 26px 0px;
+    color: var(--black);
+}

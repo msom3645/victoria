@@ -1,0 +1,128 @@
+.servs-fr{
+    min-width: 100%;
+    min-height: 78vh;
+    padding: 6px 6px 20px 6px;
+    align-items: stretch !important;
+    gap:28px;
+}
+
+.servs-imgcont{
+    width: 300px;
+    height: 200px;
+}
+.servs-service{
+    color: var(--spray);
+}
+.servs-title{
+    color: var(--black);
+}
+.servs-img{
+    border-radius: 14px;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.servs-price, .servs-dur{
+    color: var(--black);
+}
+
+.servs-card{
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid var(--spray);
+    padding: 40px 20px;
+    border-radius: 8px;
+    align-items: flex-start;
+}
+
+.servs-desc{
+    margin: 20px 0px;
+    max-width: inherit;
+    width: inherit;
+    text-align: justify; 
+    text-indent: 10px;
+}
+
+.servs-desc::first-letter{
+    background: var(--spray);
+    color: var(--cream);
+    padding: 0px 4px 0px 6px;
+    margin-right: 2px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.servs-desc::first-line{
+    font-weight: 600;
+}
+
+.servs-up{
+    gap: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.servs-bottom{
+    min-width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 28px 0px;
+}
+
+.servs-book-btn{
+    background: var(--black);
+    padding: 10px 20px;
+    color: var(--spray);
+    border-radius: 2px;
+}
+.servs-book-btn:hover{
+    color: var(--cream);
+    text-shadow: 0 0 14px white,
+    0 0 14px white;
+}
+
+.serv-fr{
+    min-width: 100%;
+    min-height: 78vh;
+    padding: 2% 2% 3% 2%;
+    gap:32px;
+}
+
+.serv-cap{
+    color: var(--text);
+    text-shadow: 0 0 1px black;
+}
+
+.serv-img-cont{
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+}
+.serv-img{
+    width: inherit;
+    height:inherit;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.serv-desc{
+    max-width: 600px;
+    width: 100%;
+    color: var(--black);
+    text-align: justify;
+}
+
+.serv-desc::first-letter{
+    background: var(--spray);
+    color: var(--cream);
+    padding: 0px 4px 0px 6px;
+    margin-right: 2px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.serv-items{
+    color: var(--text);
+}
+
