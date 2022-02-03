@@ -70,7 +70,9 @@ exports.send = (text, email, subj, rand, res) => {
     transporter.sendMail(mailOptions, (err, data) => {
         if(err){
             console.log(err)
-            res.status(500).send(err)
+            console.log(err.responseCode)
+            
+           return res.status(500).send(err.responseCode)
         }else{
             console.log('Email sent', data)
             res.status(200).send({rand})

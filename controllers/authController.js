@@ -28,7 +28,7 @@ exports.reg = async(req, res) => {
             send(emailText(user, rand, text), email, subj, rand, res)     
         }
     }catch(e){
-        res.status(500).send({message: e})
+        res.status(500).send({message: e.response})
     }
 }
 
@@ -47,7 +47,7 @@ exports.regModel = async(req, res) => {
             })
         }
       }catch(e){
-          res.status(500).send({message:'Server Error! Try later!'})
+          res.status(500).send({message:'Server Error! Try Later!'})
       }
 }
 

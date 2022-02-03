@@ -71,7 +71,7 @@ const RegPage = () => {
             setRand(data.rand)
             setLoad(false) 
         }catch(e){
-            e.response && e.response.data.message? setErr(e.response.data.message):
+            e.response && e.response.status === 550? setErr('Enter active Email address!'):
             setErr('Server Error, Try later!')
             setLoad(false)
         }

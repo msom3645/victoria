@@ -7,7 +7,7 @@ import {emailValid} from '../utils'
 import axios from 'axios'
 import './reg.css'
 import { useNavigate } from 'react-router'
-const RegPage = () => {
+const LoginPage = () => {
     const [err, setErr] = useState('')
     const [msg, setMsg] = useState('')
     const [load, setLoad] = useState(false)
@@ -75,6 +75,6 @@ const RegPage = () => {
     )
 }
 
-export default RegPage
+export default LoginPage
 
   
