@@ -1,0 +1,42 @@
+.menu-btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.menu-burg{
+    position: relative;
+}
+.close .menu-burg div:nth-child(3){
+    border-radius: 15px 0px 0px 15px;
+}
+.close .menu-burg div:nth-child(1){
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    width: 16px;
+}
+.close .menu-burg div:nth-child(2){
+    width: 16px;
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+}
+
+.menu-burg>*{
+    transition: .4s;
+    position: absolute;
+    height: 3px;
+    width: 34px;
+    background: var(--cream);
+}
+
+.menu-burg div:nth-child(1){
+    transform: translateY(9px);
+    background: var(--cream);
+}
+.menu-burg div:nth-child(2){
+    transform: translateY(-9px);
+    background: var(--cream);
+}

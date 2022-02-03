@@ -1,0 +1,173 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 2px;
+  outline: none;
+  word-wrap: break-word;
+}
+
+:root {
+  --black: #383838;
+  --cream: #fdfdcb;
+  --spray: rgba(129, 207, 224, 1);
+  /* --text:  #467292; */
+  --text:  rgb(115, 147, 179);
+  --logo:  'Monsieur La Doulaise', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+a:hover{
+  text-shadow: 
+  0 0 16px var(--cream);
+}
+
+button{
+  border: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:active{
+  opacity: .7;
+}
+
+button:disabled{
+  opacity: .6;
+  pointer-events: none;
+}
+
+input, textarea { 
+  padding: 6px 8px;
+  letter-spacing: 3px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 6px;
+  width: 100%;
+ }
+
+ input:focus{
+   background: var(--cream);
+    }
+ textarea:focus{
+   background: var(--cream);
+ }
+
+
+::placeholder{
+  color: orangered;
+  opacity: .5;
+  font-size: 12px;
+}
+
+.screen{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+  text-align: center;
+}
+
+.f{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.fc{
+  flex-direction: column;
+}
+
+.feven{
+  justify-content: space-evenly;
+}
+.fcenter{
+  justify-content: center;
+}
+.fbetw{
+  justify-content: space-between;
+}
+
+.send-btn{
+  padding: 8px 16px;
+  background: var(--spray);
+  color:var(--black)
+}
+
+.send-btn:hover{
+  color: var(--cream);
+}
+
+.cl-yes-btn, .cl-no-btn{
+  width: 80px;
+  height: 36px;
+  color: var(--cream)
+}
+
+.cl-yes-btn{
+  background: green;
+}
+
+.cl-no-btn{
+  background: crimson;
+}
+
+.cl-yes-btn:hover{
+  background: white;
+  outline: 1px solid green;
+  color: green;
+}
+.cl-no-btn:hover{
+  background: white;
+  outline: 1px solid crimson;
+  color: crimson;
+}
+
+.page-cap{
+  width: 100%;
+  color: var(--black);
+  margin: 26px 0px;
+}
+
+.adm-link{
+  margin: 12px;
+  background: var(--spray);
+  color: var(--black);
+  font-weight: 600;
+  width: 310px;
+  height: 90px;
+  border-radius: 4px;
+  transition: .2s linear;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.adm-link:hover{
+  transform: translateY(-3px);
+  color: var(--cream);
+}
+
+::-webkit-scrollbar{
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--spray);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--cream);
+}
+
+
+

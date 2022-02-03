@@ -1,0 +1,38 @@
+.lo-fr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+}
+
+.lo-b{
+    width: 11px;
+    height: 20px;
+    border-top: 3px solid var(--spray);
+    border-left: 3px solid var(--spray);
+    border-bottom: 3px solid var(--spray);
+    border-radius: 6px 0px 0px 6px;
+}
+
+.lo-ar{
+    display: flex;
+    align-items: center;
+    transition: .2s;
+}
+
+.lo-ar div:nth-child(1){
+    height: 4px;
+    width: 10px;
+    background: var(--spray);
+}
+.lo-ar div:nth-child(2){
+    border-left: 7px solid var(--spray);
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+}
+
+.lo-fr:hover .lo-ar{
+    transform: translateX(3px);
+    opacity: .9;
+}

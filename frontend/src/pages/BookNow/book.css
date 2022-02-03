@@ -1,0 +1,190 @@
+.book-fr{   
+    min-height: 78vh;
+    width: 360px;
+    margin: 0 auto;
+}
+.book-person{
+    padding-top: 2%;
+    gap: 22px;
+}
+.book-person input{
+    width: 320px;
+}
+
+.book-items>*:not(:first-child):not(:last-child){
+    width: 320px !important;
+    height: 38px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--text) !important;
+
+}
+
+.book-serv{
+    padding-top: 3%;
+    width: 100%;
+    gap: 34px;
+}
+
+.book-serv select{
+    padding: 0px 4px;
+    height: 60px;
+    width: 320px;
+    font-size: 20px;
+    color: var(--text);
+    border: 1px solid var(--text);
+    text-align: center;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.book-serv option{
+     padding: 20px 0px;
+}
+.book-date{
+    padding-top: 2%;
+    gap: 26px;
+}
+
+.book-date-inp{
+    width: 320px;
+    height: 70px;
+    border: none;
+    position: relative;
+    
+}
+
+.book-date-inp::after{
+    content:'CHOOSE DATE >';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    left: 9px;
+    padding-left: 40px;
+    background: white;
+    width: 200px;
+    height: 70px;
+    color: var(--spray);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.book-date-inp:focus{
+    background: none !important;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cream) !important;
+    border-radius: 6%;
+    /* background: url('C:\Users\mso30\OneDrive\Рабочий стол\victoria\frontend\public\uploads\calendar-svgrepo-com.svg') center no-repeat; */
+    /* background-size: 60px 60px;    */
+}
+
+
+.book-btn{
+    position: relative;
+    background: var(--black);
+    color: var(--spray);
+    padding: 12px 36px 12px 30px;
+    transition: .2s;
+}
+.book-btn:hover{
+    text-shadow: 
+    0 0 14px yellow,
+    0 0 14px yellow;
+    color: white;
+}
+.book-now-btn{
+    position: relative;
+    background: orchid;
+    color: white;
+    padding: 12px 36px 12px 30px;
+    transition: .2s;
+    animation: bb-glow 3s infinite;
+}
+.book-now-btn:hover{
+    text-shadow: 
+    0 0 14px yellow,
+    0 0 14px yellow;
+    color: white;
+}
+
+@keyframes bb-glow {
+    0%{
+        box-shadow: 0 0 0px var(--spray);
+    }
+    50%{
+        box-shadow:
+         0 0 8px var(--spray),
+         0 0 8px var(--spray),
+         0 0 8px var(--spray);
+    }
+    100%{
+        box-shadow: 0 0 0px var(--spray);
+    }
+}
+
+.book-arr{
+    position: absolute;
+    margin-left: 4px;
+    transition: .2s;
+}
+.book-btn:hover .book-arr  {
+    margin-left: 8px;
+}
+
+
+.book-btn-back{
+    position: relative;
+    background: var(--black);
+    color: var(--spray);
+    padding: 12px 30px 12px 36px;
+    transition: .2s;
+}
+.book-btn-back:hover{
+    text-shadow: 
+    0 0 14px yellow,
+    0 0 14px yellow;
+    color: white;
+}
+.book-arr-back{
+    position: absolute;
+    left: 22px;
+    transition: .2s;
+}
+.book-btn-back:hover .book-arr-back  {
+    left: 18px;
+}
+
+.book-hour{
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid var(--spray);
+    cursor: pointer;
+}
+.book-hour:hover{
+    color: var(--cream);
+    background: var(--spray);
+}
+
+.book-time-act{
+    background: var(--spray) !important;
+    color: var(--cream);
+}
+.book-time-disable{
+    opacity: .3;
+    pointer-events: none;
+}
+
+.book-booked{
+    padding-top: 40%;
+    gap: 50px;
+    width: 320px;
+    margin: 0 auto;   
+}

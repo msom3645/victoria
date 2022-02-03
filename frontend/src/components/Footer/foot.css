@@ -1,0 +1,72 @@
+.foot{
+    width: 100%;
+    background: var(--black);
+    padding: 10px;
+    min-height: 100px;
+}
+
+
+.phones{
+    flex:1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu{
+    flex:1;
+}
+
+.foot-link{
+    color: var(--cream);
+    font-size: 12px;
+    margin: 4px 8px;
+}
+.phone{
+    display: flex;
+    gap: 4px;
+}
+
+.phone-num{
+    color: var(--cream);
+    font-size: 12px;
+}
+
+.phone-ic{
+    margin-right: 6px;
+    color: var(--spray);
+    font-size: 16px;
+
+}
+
+.hours, .about{
+    flex: 1;
+    padding-bottom: 6px;
+    min-height: inherit;
+}
+
+.hours h4{
+    color: var(--spray);
+}
+
+.hours div{
+    font-size: 11px;
+    padding-top: 6px;
+    color: var(--cream);
+}
+
+.about p{
+    font-size: 11px;
+    color: var(--cream);
+}
+.about h4{
+        color: var(--spray);
+    }
+
+@media(max-width: 1200px) {
+    .foot{
+        display: none;
+    }
+}

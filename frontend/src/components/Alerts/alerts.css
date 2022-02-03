@@ -1,0 +1,34 @@
+.msg-alert{
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 340px;
+    border-radius: 4px;
+    padding: 12px 6px;
+    color: var(--black);
+    text-align: center;
+    -webkit-user-select: none;                                                             
+    -ms-user-select: none; 
+    user-select: none; 
+    transform: scale(0);
+  }
+  
+  .msg{
+    animation: alert 2s;
+  }
+  
+  .err{
+    animation: alert 4s;
+  }
+  
+  @keyframes alert {
+    5%{
+      transform: scale(1);
+    }
+    92%{
+      transform: scale(1);
+    }
+    97%{
+      transform: scale(0);
+    }
+        
+  }

@@ -1,0 +1,21 @@
+const express = require('express')
+const router = express.Router()
+const {isAuth, isAdmin} = require('../utils/permissions.js')
+const {allServices,allImageShow,allStylists, allContacts, allBook, about, findStylists} = require('../controllers/itemsController')
+const {phone, phoneEdit} = require('../controllers/phoneController')
+const {bookPost, bookDates, bookClients} = require('../controllers/bookController')
+const {findId, delId, createModel, editModel} = require('../controllers/utilsController')
+
+router.route('/models-utils/:id').post(findId).delete(isAuth, isAdmin,delId)
+router.route('/main').post(isAuth, isAdmin,createModel).put(isAuth, isAdmin,editModel)
+router.route('/services').get(allServices)
+router.route('/slider').get(allImageShow)
+router.route('/stylists').get(allStylists).post(findStylists)
+router.route('/contacts').get(allContacts)
+router.route('/about').get(about)
+router.route('/phone').get(phone).put(isAuth, isAdmin,phoneEdit)
+router.route('/book').get(allBook).post(bookPost)
+router.route('/book-dates').post(bookDates)
+router.route('/book-clients').post(bookClients)  
+
+module.exports = router

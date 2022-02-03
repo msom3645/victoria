@@ -1,0 +1,35 @@
+.map-fr{
+    position: relative;
+    max-width: 1000px;
+    width: 99%;
+    height: 500px;
+    z-index: 1;
+}
+
+.map-caption{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: inherit;
+    height: 55px;
+    background: var(--black);
+    z-index: 1;
+}
+
+.map-link{
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--cream);
+}
+
+.map-adr{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: inherit;
+    height: inherit;
+    z-index: 0;
+}
+
+

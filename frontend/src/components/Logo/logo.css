@@ -1,0 +1,41 @@
+.logo-fr{
+    background: var(--black);
+    width: fit-content;
+ }
+.logo{
+    font-family: var(--logo);
+    font-size: 40px;
+    height: 54px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    color: var(--cream);
+    -webkit-user-select: none;                                                             
+    -ms-user-select: none; 
+    user-select: none; 
+    animation: x 6s infinite;
+}
+
+.logo-fr span{
+    color: var(--spray);
+    font-size: 11px;
+}
+
+/* @keyframes x {
+    0%{
+        text-shadow: none;
+    }
+    50%{
+    text-shadow: 
+    0 0 2px black,
+    0 0 2px black,
+    0 0 2px black,
+    0 0 2px black,
+    0 0 2px black,
+    0 0 10px var(--cream),
+    0 0 10px var(--cream)
+    ;
+    }
+    100%{
+        text-shadow: none;
+    }
+} */
