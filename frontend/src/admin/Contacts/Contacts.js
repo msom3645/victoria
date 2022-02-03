@@ -53,7 +53,7 @@ const Contacts = () => {
             {confirm.sts && confirm.id === e?._id && <div className='adm-conf'>
                 <h4 style={{color:'var(--cream)'}}>Are You Sure?</h4>
                 <div>
-                <button onClick={()=>removeItem('ContactsModel',  `/api/admin/models-utils/${e._id}`, setLoad, setErr, setMsg, e.imgPath)}>Yes</button>
+                <button onClick={()=>removeItem('ContactsModel',  `/api/admin/models-utils/${e._id}`, setLoad, setErr, setMsg)}>Yes</button>
                 <button onClick={()=>setConfirm({sts:false, id:''})}>No</button>
                 </div>
                 </div>}

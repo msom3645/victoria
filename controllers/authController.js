@@ -69,6 +69,8 @@ exports.login = async(req, res) => {
                     imgPath: user.imgPath,
                     token: genToken(user)
                 })
+            }else{
+                res.status(401).send({message:'Invalid email or password'})
             }
         }else{
             res.status(401).send({message:'Invalid email or password'})

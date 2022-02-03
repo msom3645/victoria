@@ -49,7 +49,7 @@ export const compressImg = async(img, setErr,setLoad, size, f) => {
         }
 
 
-export const removeItem = async(model, path, setLoad, setErr, setMsg, imgPath) => {
+export const removeItem = async(model, path, setLoad, setErr, setMsg) => {
     setLoad(true)
     try{
         const {data} = await axios.delete(path, {
@@ -58,7 +58,6 @@ export const removeItem = async(model, path, setLoad, setErr, setMsg, imgPath) =
             },
             data: {
                 model,
-                imgPath
             }
         })
         setMsg(data.msg)
